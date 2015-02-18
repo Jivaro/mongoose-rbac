@@ -29,7 +29,7 @@
     "mocha": "~1.8.1",
     "chai": "~1.6.1",
     "jshint": "~2.4.4",
-    "mongoose": "~3.x",
+    "mongoose": "~3.x"
   },
   "license": "MIT"
 }
