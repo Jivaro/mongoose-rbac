@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bryandragon/mongoose-rbac.git"
+    "url": "git://github.com/Softshag/mongoose-rbac.git"
   },
   "keywords": [
     "mongoose",
@@ -20,13 +20,16 @@
     "permission"
   ],
   "dependencies": {
-    "mongoose": "~3.8.x",
     "async": "~0.2.6"
+  },
+  "peerDependencies": {
+    "mongoose" : "~3.x"
   },
   "devDependencies": {
     "mocha": "~1.8.1",
     "chai": "~1.6.1",
-    "jshint": "~2.4.4"
+    "jshint": "~2.4.4",
+    "mongoose": "~3.x",
   },
   "license": "MIT"
 }
