@@ -23,7 +23,7 @@
     "async": "~0.2.6"
   },
   "peerDependencies": {
-    "mongoose" : "~3.x"
+    "mongoose" : "*"
   },
   "devDependencies": {
     "mocha": "~1.8.1",
