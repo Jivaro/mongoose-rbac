@@ -20,10 +20,11 @@
     "permission"
   ],
   "dependencies": {
-    "async": "~0.2.6"
+    "async": "~0.2.6",
+    "native-or-bluebird": "^1.2.0"
   },
   "peerDependencies": {
-    "mongoose" : "*"
+    "mongoose": "*"
   },
   "devDependencies": {
     "mocha": "~1.8.1",
