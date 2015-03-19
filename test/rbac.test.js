@@ -105,7 +105,7 @@ describe('roles and permissions:', function () {
 
       henry.can('create', 'Post').then(function (can) {
         //expect(err).to.not.exist;
-        console.log('her')
+
         expect(can).to.equal(true);
         henry.hasRole('admin').then(function (isAdmin) {
           //expect(err).to.not.exist;
