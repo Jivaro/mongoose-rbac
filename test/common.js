@@ -49,19 +49,21 @@ function loadFixtures(callback) {
     var user = new User({ username: 'henry' });
     user.save();
 
-    Permission.create(permissions, function (err) {
+    Permission.create(permissions, function (err, perms) {
       if (err) return callback(err);
 
-      var perms, admin, readonly;
-
-      perms = Array.prototype.slice.call(arguments, 1);
+      var admin, readonly;
+      //console.log(arguments)
+      //perms = Array.prototype.slice.call(arguments, 1);
       admin = new Role({ name: 'admin' });
       admin.permissions = perms;
       admin.save(function (err) {
+        console.log()
         if (err) return callback(err);
         readonly = new Role({ name: 'readonly' });
         readonly.permissions = [perms[1], perms[5]];
         readonly.save(function (err) {
+
           callback(err);
         });
       });
